@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>欢迎来到 Blowfish! :tada: on Blowfish</title>
+    <link>https://localhost:1313/zh-cn/</link>
+    <description>Recent content in 欢迎来到 Blowfish! :tada: on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Blowfish</copyright>
+    <lastBuildDate>Sun, 08 Aug 9999 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Blowfish和 Hugo 构建你的主页</title>
+      <link>https://localhost:1313/zh-cn/guides/202310-blowfish-tutorial/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/guides/202310-blowfish-tutorial/</guid>
+      <description>一年前我创建了 Blowfish，这是一个为了打造我的个人主页而精心设计的 Hugo 主题。我决定将其作为一个开源项目。直到今天，Blowfish 已经变成了一个蓬勃发展的开源项目，在 GitHub 上拥有超过900个 star 和数百名用户。在本教程中，我将向你展示如何搭建并在几分钟内让你的网站运行起来。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/guides/202310-blowfish-tutorial/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>多作者</title>
+      <link>https://localhost:1313/zh-cn/samples/multiple-authors/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/multiple-authors/</guid>
+      <description>如何使用多个作者的简单示例。</description>
+      
+    </item>
+    
+    <item>
+      <title>缩略图</title>
+      <link>https://localhost:1313/zh-cn/samples/thumbnail_sample/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/thumbnail_sample/</guid>
+      <description>一个展示如何在你的文章中开始使用缩略图的快速示例。</description>
+      
+    </item>
+    
+    <item>
+      <title>欢迎来到 Blowfish</title>
+      <link>https://localhost:1313/zh-cn/docs/welcome/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/welcome/</guid>
+      <description>Blowfish 包含了大量的特性功能。 Blowfish 的目标是开发一个简单且轻量级的主题</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/welcome/featured.svg" />
+    </item>
+    
+    <item>
+      <title>安装和配置</title>
+      <link>https://localhost:1313/zh-cn/docs/installation/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/installation/</guid>
+      <description>如果想快速上手，可以按照标准的 Hugo 快速启动 文档。 更详细的安装如</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/installation/featured.svg" />
+    </item>
+    
+    <item>
+      <title>入门指南</title>
+      <link>https://localhost:1313/zh-cn/docs/getting-started/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/getting-started/</guid>
+      <description>本节内容需要已经阅读了 安装 Blowfish 主题。 我们刚刚推出了一个 CLI 工具，</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/getting-started/featured.svg" />
+    </item>
+    
+    <item>
+      <title>配置</title>
+      <link>https://localhost:1313/zh-cn/docs/configuration/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/configuration/</guid>
+      <description>Blowfish 适宜个高度定制化的主题，使用到了一些 Hugo 中最新的特性来简化配</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/configuration/featured.svg" />
+    </item>
+    
+    <item>
+      <title>图标</title>
+      <link>https://localhost:1313/zh-cn/samples/icons/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/icons/</guid>
+      <description>Blowfish 内置了许多 FontAwesome 6 中的图标。你可以使用 图标部分或者 图标短代码将</description>
+      
+    </item>
+    
+    <item>
+      <title>主页布局</title>
+      <link>https://localhost:1313/zh-cn/docs/homepage-layout/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/homepage-layout/</guid>
+      <description>Blowfish 提供了一个完全灵活的主页布局。你可以选择两种主要模板，并提</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/homepage-layout/featured.svg" />
+    </item>
+    
+    <item>
+      <title>简码</title>
+      <link>https://localhost:1313/zh-cn/docs/shortcodes/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/shortcodes/</guid>
+      <description>除了所有 默认 Hugo 简码 之外，Blowfish 还添加了一些额外的功</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/shortcodes/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://localhost:1313/zh-cn/docs/front-matter/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/front-matter/</guid>
+      <description>除了 Hugo 中默认的 front matter，Blowfish 主题中还添加了</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/front-matter/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Partials</title>
+      <link>https://localhost:1313/zh-cn/docs/partials/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/partials/</guid>
+      <description>站点分析 # Blowfish 支持了 Fathom、Google 和 Umami。F</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/partials/featured.svg" />
+    </item>
+    
+    <item>
+      <title>多创作者模式</title>
+      <link>https://localhost:1313/zh-cn/docs/multi-author/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/multi-author/</guid>
+      <description>一个网站会有多个创作者共同贡献内容，所以需要再整个网站中默认</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/multi-author/featured.svg" />
+    </item>
+    
+    <item>
+      <title>缩略图</title>
+      <link>https://localhost:1313/zh-cn/docs/thumbnails/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/thumbnails/</guid>
+      <description>缩略图 # Blowfish 对视觉支持进行了增强，可以让你轻松地为文章添加缩略</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/thumbnails/featured.svg" />
+    </item>
+    
+    <item>
+      <title>内容示例</title>
+      <link>https://localhost:1313/zh-cn/docs/content-examples/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/content-examples/</guid>
+      <description>如果你已经按顺序阅读了文档，那么你现在应该已经了解了 Blowfish 中所有</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/content-examples/featured.svg" />
+    </item>
+    
+    <item>
+      <title>系列</title>
+      <link>https://localhost:1313/zh-cn/docs/series/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/series/</guid>
+      <description>Blowfish 提供了将一组文章分组到“系列”下的功能。将文章放在系列下将</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/series/featured.svg" />
+    </item>
+    
+    <item>
+      <title>进阶自定义</title>
+      <link>https://localhost:1313/zh-cn/docs/advanced-customisation/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/advanced-customisation/</guid>
+      <description>您可以通过多种方式对 Blowfish 进行高级自定义。请阅读下文，了解更多可</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/advanced-customisation/featured.svg" />
+    </item>
+    
+    <item>
+      <title>托管和部署</title>
+      <link>https://localhost:1313/zh-cn/docs/hosting-deployment/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/hosting-deployment/</guid>
+      <description>有许多方法可以部署基于 Blowfish 主题的 Hugo 网站。这个主题几乎在任何部署</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/hosting-deployment/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Firebase: 阅读量 &amp; 点赞量</title>
+      <link>https://localhost:1313/zh-cn/docs/firebase-views/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/docs/firebase-views/</guid>
+      <description>为了能够在网站中获取动态数据，我们支持了对 Firebase 的集成。这将允许</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/firebase-views/featured.svg" />
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://localhost:1313/zh-cn/samples/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/markdown/</guid>
+      <description>&lt;p&gt;本文提供了可在 Blowfish 中使用的基本 Markdown 格式示例，还展示了如何加入一些基本 HTML 元素。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>简码示例</title>
+      <link>https://localhost:1313/zh-cn/samples/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/rich-content/</guid>
+      <description>这是&lt;strong&gt;简码&lt;/strong&gt;内容的示例。</description>
+      
+    </item>
+    
+    <item>
+      <title>文本占位符</title>
+      <link>https://localhost:1313/zh-cn/samples/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>数学表达式</title>
+      <link>https://localhost:1313/zh-cn/samples/mathematical-notation/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/mathematical-notation/</guid>
+      <description>&lt;p&gt;KaTeX 可用于在文章中呈现数学表达式。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>流程图和思维导图</title>
+      <link>https://localhost:1313/zh-cn/samples/diagrams-flowcharts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/diagrams-flowcharts/</guid>
+      <description>使用 Mermaid 可以轻松地将图表和流程图添加到文章中。</description>
+      
+    </item>
+    
+    <item>
+      <title>图表</title>
+      <link>https://localhost:1313/zh-cn/samples/charts/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/charts/</guid>
+      <description>Blowfish 包含 Chart.js，可实现强大的图表和数据可视化。</description>
+      
+    </item>
+    
+    <item>
+      <title>Emoji 表情符号 :parachute:</title>
+      <link>https://localhost:1313/zh-cn/samples/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/samples/emoji/</guid>
+      <description>📖🏞️🧗🏽🐉🧙🏽‍♂️🧚🏽👸</description>
+      
+    </item>
+    
+    <item>
+      <title>使用指南模板</title>
+      <link>https://localhost:1313/zh-cn/guides/template/</link>
+      <pubDate>Tue, 22 Dec 1987 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/zh-cn/guides/template/</guid>
+      <description>感谢您愿意为 Blowfish 社区做出贡献。 如何开始？ # 这是一篇模板文章，将</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/guides/template/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
