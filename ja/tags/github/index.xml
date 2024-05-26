@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Blowfish</title>
+    <link>https://localhost:1313/ja/tags/github/</link>
+    <description>Recent content in Github on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2024 Blowfish</copyright>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/ja/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting &amp; Deployment</title>
+      <link>https://localhost:1313/ja/docs/hosting-deployment/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/ja/docs/hosting-deployment/</guid>
+      <description>There are many ways to deploy your Hugo website built with Blowfish. The theme is designed to be flexible in almost any deployment scenario.
+Blowfish is built using relative URLs throughout the theme.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://localhost:1313/docs/hosting-deployment/featured.svg" />
+    </item>
+    
+  </channel>
+</rss>
