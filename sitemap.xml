@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://betan423.github.io/posts/mfctf_writeup/</loc>
+    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://betan423.github.io/</loc>
     <lastmod>2024-05-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,12 +17,6 @@
   <url>
     <loc>https://betan423.github.io/posts/</loc>
     <lastmod>2024-05-28T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://betan423.github.io/posts/seondpost/</loc>
-    <lastmod>2024-05-27T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
