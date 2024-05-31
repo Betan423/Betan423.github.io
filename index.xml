@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>betan423.github.io on betan</title>
+    <title>betan423.github.io on 貝坦betan</title>
     <link>https://betan423.github.io/</link>
-    <description>Recent content in betan423.github.io on betan</description>
+    <description>Recent content in betan423.github.io on 貝坦betan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2024 貝坦betan</copyright>
-    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024 MyFirstCTF WriteUp</title>
       <link>https://betan423.github.io/posts/mfctf_writeup/</link>
-      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://betan423.github.io/posts/mfctf_writeup/</guid>
       <description>2024ㄉMyFirstCTF跟pre-examㄉWriteUp</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/mfctf_writeup/featured.png" />
+    </item>
+    
+    <item>
+      <title>網站建立基礎教學</title>
+      <link>https://betan423.github.io/posts/webcreat/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/posts/webcreat/</guid>
+      <description>很不完整的網站建立教程</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/webcreat/featured.png" />
+    </item>
+    
+    <item>
+      <title>網站簡介</title>
+      <link>https://betan423.github.io/intro/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/intro/</guid>
+      <description>看看我ㄉ部落格歷史。</description>
+      
     </item>
     
     <item>
@@ -24,8 +44,18 @@
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://betan423.github.io/posts/myfirstpost/</guid>
-      <description>This is my first post on my site</description>
+      <description>值得紀念的第一篇文</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/myfirstpost/featured.png" />
+    </item>
+    
+    <item>
+      <title>我是貝坦betan</title>
+      <link>https://betan423.github.io/authors/betan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/authors/betan/</guid>
+      <description></description>
+      
     </item>
     
   </channel>

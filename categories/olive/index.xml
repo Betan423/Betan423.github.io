@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>olive on betan</title>
-    <link>https://betan423.github.io/categories/olive/</link>
+    <link>http://localhost:1313/categories/olive/</link>
     <description>Recent content in olive on betan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2024 貝坦betan</copyright>
-    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/categories/olive/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/olive/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

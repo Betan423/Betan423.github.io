@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Space on betan</title>
+    <title>Space on 貝坦betan</title>
     <link>https://betan423.github.io/tags/space/</link>
-    <description>Recent content in Space on betan</description>
+    <description>Recent content in Space on 貝坦betan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2024 貝坦betan</copyright>
@@ -14,7 +14,7 @@
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://betan423.github.io/posts/myfirstpost/</guid>
-      <description>This is my first post on my site</description>
+      <description>值得紀念的第一篇文</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/myfirstpost/featured.png" />
     </item>
     
