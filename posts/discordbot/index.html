@@ -11,7 +11,7 @@
   <title>DC音樂機器人製作 &middot; 貝坦betan</title>
   <meta name="title" content="DC音樂機器人製作 &middot; 貝坦betan" />
   
-  <meta name="description" content="透過chatGPT抄來的機器人" />
+  <meta name="description" content="謝謝ChatGPT讓我打遊戲的時候有歌可以聽" />
   <meta name="keywords" content="code, " />
   
   
@@ -66,18 +66,20 @@
   <meta property="og:url" content="https://betan423.github.io/posts/discordbot/">
   <meta property="og:site_name" content="貝坦betan">
   <meta property="og:title" content="DC音樂機器人製作">
-  <meta property="og:description" content="透過chatGPT抄來的機器人">
+  <meta property="og:description" content="謝謝ChatGPT讓我打遊戲的時候有歌可以聽">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-07-25T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-07-25T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-08-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-06T00:00:00+00:00">
     <meta property="article:tag" content="Code">
+    <meta property="og:image" content="https://betan423.github.io/posts/discordbot/featured.png">
 
   
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://betan423.github.io/posts/discordbot/featured.png">
   <meta name="twitter:title" content="DC音樂機器人製作">
-  <meta name="twitter:description" content="透過chatGPT抄來的機器人">
+  <meta name="twitter:description" content="謝謝ChatGPT讓我打遊戲的時候有歌可以聽">
 
   
   <script type="application/ld+json">
@@ -88,7 +90,7 @@
     "name": "DC音樂機器人製作",
     "headline": "DC音樂機器人製作",
     
-    "abstract": "透過chatGPT抄來的機器人",
+    "abstract": "謝謝ChatGPT讓我打遊戲的時候有歌可以聽",
     "inLanguage": "zh-tw",
     "url" : "https:\/\/betan423.github.io\/posts\/discordbot\/",
     "author" : {
@@ -96,15 +98,15 @@
       "name": "貝坦betan"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-07-25T00:00:00\u002b00:00",
-    "datePublished": "2024-07-25T00:00:00\u002b00:00",
+    "dateCreated": "2024-08-06T00:00:00\u002b00:00",
+    "datePublished": "2024-08-06T00:00:00\u002b00:00",
     
-    "dateModified": "2024-07-25T00:00:00\u002b00:00",
+    "dateModified": "2024-08-06T00:00:00\u002b00:00",
     
     "keywords": ["code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "102"
+    "wordCount": "889"
   }]
   </script>
 
@@ -403,7 +405,7 @@
   
 
 
-<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/Background_huf584403c160ed37e19e2052a9d2fea60_522599_1200x0_resize_box_3.png);"></div>
+<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/posts/discordbot/featured_hud9014fb60a9dd0e440c8788a30ce1407_878991_1200x0_resize_box_3.png);"></div>
 
 
 
@@ -465,7 +467,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-07-25 00:00:00 &#43;0000 UTC">25 July 2024</time>
+  <time datetime="2024-08-06 00:00:00 &#43;0000 UTC">6 August 2024</time>
   
 
   
@@ -522,7 +524,13 @@
     <li><a href="#h2代碼h2"><h2>代碼</h2></a></li>
     <li><a href="#安裝所需的庫">安裝所需的庫</a></li>
     <li><a href="#ffmpeg安裝">ffmpeg安裝</a></li>
-    <li><a href="#botpy">bot.py</a></li>
+    <li><a href="#botpy">bot.py</a>
+      <ul>
+        <li><a href="#線上串流">線上串流</a></li>
+        <li><a href="#下載到本地">下載到本地</a></li>
+        <li><a href="#運行方法">運行方法</a></li>
+      </ul>
+    </li>
     <li><a href="#h2與chatgpt交流h2"><h2>與chatGPT交流</h2></a></li>
   </ul>
 </nav>
@@ -544,7 +552,13 @@
     <li><a href="#h2代碼h2"><h2>代碼</h2></a></li>
     <li><a href="#安裝所需的庫">安裝所需的庫</a></li>
     <li><a href="#ffmpeg安裝">ffmpeg安裝</a></li>
-    <li><a href="#botpy">bot.py</a></li>
+    <li><a href="#botpy">bot.py</a>
+      <ul>
+        <li><a href="#線上串流">線上串流</a></li>
+        <li><a href="#下載到本地">下載到本地</a></li>
+        <li><a href="#運行方法">運行方法</a></li>
+      </ul>
+    </li>
     <li><a href="#h2與chatgpt交流h2"><h2>與chatGPT交流</h2></a></li>
   </ul>
 </nav>
@@ -738,9 +752,339 @@ Reset Token
 <p>主要可以分兩種撥放方式<br>
 1.線上串流(較不穩定)<br>
 2.下載到本機(很穩定)</p>
+
+
+<h3 class="relative group">線上串流 
+    <div id="%E7%B7%9A%E4%B8%8A%E4%B8%B2%E6%B5%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%B7%9A%E4%B8%8A%E4%B8%B2%E6%B5%81" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
 <p>先講第一種線上串流的部分<br>
 穩定性的部分就真的很爛 大概每首歌都撥不完 大概撥個一兩分鐘左右而已</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">discord</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">discord.ext</span> <span class="kn">import</span> <span class="n">commands</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">yt_dlp</span> <span class="k">as</span> <span class="nn">youtube_dl</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">asyncio</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">intents</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Intents</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">message_content</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">voice_states</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">bot</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">Bot</span><span class="p">(</span><span class="n">command_prefix</span><span class="o">=</span><span class="s1">&#39;&amp;&#39;</span><span class="p">,</span> <span class="n">intents</span><span class="o">=</span><span class="n">intents</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ytdl_format_options</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;bestaudio/best&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;outtmpl&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(extractor)s</span><span class="s1">-</span><span class="si">%(id)s</span><span class="s1">-</span><span class="si">%(title)s</span><span class="s1">.</span><span class="si">%(ext)s</span><span class="s1">&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;restrictfilenames&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;noplaylist&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;nocheckcertificate&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;ignoreerrors&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;logtostderr&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;quiet&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;no_warnings&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;default_search&#39;</span><span class="p">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;source_address&#39;</span><span class="p">:</span> <span class="s1">&#39;0.0.0.0&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ffmpeg_options</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;options&#39;</span><span class="p">:</span> <span class="s1">&#39;-vn&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ytdl</span> <span class="o">=</span> <span class="n">youtube_dl</span><span class="o">.</span><span class="n">YoutubeDL</span><span class="p">(</span><span class="n">ytdl_format_options</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">YTDLSource</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">PCMVolumeTransformer</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">volume</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">volume</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@classmethod</span>
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">def</span> <span class="nf">from_url</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">loop</span> <span class="o">=</span> <span class="n">loop</span> <span class="ow">or</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="n">loop</span><span class="o">.</span><span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">ytdl</span><span class="o">.</span><span class="n">extract_info</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="ow">not</span> <span class="n">stream</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;entries&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">filename</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">stream</span> <span class="k">else</span> <span class="n">ytdl</span><span class="o">.</span><span class="n">prepare_filename</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">FFmpegPCMAudio</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="o">**</span><span class="n">ffmpeg_options</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">queue_urls</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">current_player</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># 用於儲存當前播放的音樂</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.event</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Logged in as </span><span class="si">{</span><span class="n">bot</span><span class="o">.</span><span class="n">user</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">ctx</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">voice</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">ctx</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is not connected to a voice channel&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">channel</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">voice</span><span class="o">.</span><span class="n">channel</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">voice_client</span> <span class="o">=</span> <span class="k">await</span> <span class="n">channel</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">voice_client</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Queue the song</span>
+</span></span><span class="line"><span class="cl">    <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">queue_urls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">voice_client</span><span class="o">.</span><span class="n">is_playing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">voice_client</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">leave</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">guild</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">q</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">queue_urls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">queue_list</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">&#34;</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">queue_urls</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Current queue:</span><span class="se">\n</span><span class="si">{</span><span class="n">queue_list</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&#34;The queue is currently empty.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">s</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span> <span class="ow">and</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">is_playing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;Skipped the current song.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Optionally, automatically play the next song</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="n">queue</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&#34;No song is currently playing.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">voice_client</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">global</span> <span class="n">current_player</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">queue</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">url</span> <span class="o">=</span> <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">queue_urls</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">async</span> <span class="k">with</span> <span class="n">ctx</span><span class="o">.</span><span class="n">typing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">player</span> <span class="o">=</span> <span class="k">await</span> <span class="n">YTDLSource</span><span class="o">.</span><span class="n">from_url</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="n">bot</span><span class="o">.</span><span class="n">loop</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">current_player</span> <span class="o">=</span> <span class="n">player</span>
+</span></span><span class="line"><span class="cl">                <span class="n">voice_client</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">after</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run_coroutine_threadsafe</span><span class="p">(</span><span class="n">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">voice_client</span><span class="p">),</span> <span class="n">bot</span><span class="o">.</span><span class="n">loop</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;正在撥放: </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;error:&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;no song&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">bot</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">&#39;你的token&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>反正就又卡又容易斷掉 不如乖乖下載下來</p>
 
+
+<h3 class="relative group">下載到本地 
+    <div id="%E4%B8%8B%E8%BC%89%E5%88%B0%E6%9C%AC%E5%9C%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%B8%8B%E8%BC%89%E5%88%B0%E6%9C%AC%E5%9C%B0" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>因為是現在還有在用ㄉ，所以加了一些功能<br>
+基本上就自己看一下code就能知道具體功能了 這邊就不多講了
+然後下載到本地的話也不是全部下載，我是設定成一次本地只會有一首歌而已，然後撥下一首的時候就把前面的刪掉，所以不用怕自己電腦被灌爆 &gt;.0</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">discord</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">discord.ext</span> <span class="kn">import</span> <span class="n">commands</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">yt_dlp</span> <span class="k">as</span> <span class="nn">youtube_dl</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">asyncio</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">datetime</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">intents</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Intents</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">message_content</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">voice_states</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">bot</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">Bot</span><span class="p">(</span><span class="n">command_prefix</span><span class="o">=</span><span class="s1">&#39;&amp;&#39;</span><span class="p">,</span> <span class="n">intents</span><span class="o">=</span><span class="n">intents</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ytdl_format_options</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;bestaudio/best&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;outtmpl&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%(extractor)s</span><span class="s1">-</span><span class="si">%(id)s</span><span class="s1">-</span><span class="si">%(title)s</span><span class="s1">.</span><span class="si">%(ext)s</span><span class="s1">&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;restrictfilenames&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;noplaylist&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;nocheckcertificate&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;ignoreerrors&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;logtostderr&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;quiet&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;no_warnings&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;default_search&#39;</span><span class="p">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;source_address&#39;</span><span class="p">:</span> <span class="s1">&#39;0.0.0.0&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ffmpeg_options</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;options&#39;</span><span class="p">:</span> <span class="s1">&#39;-vn&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ytdl</span> <span class="o">=</span> <span class="n">youtube_dl</span><span class="o">.</span><span class="n">YoutubeDL</span><span class="p">(</span><span class="n">ytdl_format_options</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">YTDLSource</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">PCMVolumeTransformer</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">volume</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">volume</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;duration&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@classmethod</span>
+</span></span><span class="line"><span class="cl">    <span class="k">async</span> <span class="k">def</span> <span class="nf">from_url</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">loop</span> <span class="o">=</span> <span class="n">loop</span> <span class="ow">or</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="n">loop</span><span class="o">.</span><span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">ytdl</span><span class="o">.</span><span class="n">extract_info</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="ow">not</span> <span class="n">stream</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;entries&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">filename</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">stream</span> <span class="k">else</span> <span class="n">ytdl</span><span class="o">.</span><span class="n">prepare_filename</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">discord</span><span class="o">.</span><span class="n">FFmpegPCMAudio</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="o">**</span><span class="n">ffmpeg_options</span><span class="p">),</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">),</span> <span class="n">filename</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">queue_urls</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">current_player</span> <span class="o">=</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl"><span class="n">start_time</span> <span class="o">=</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl"><span class="n">downloaded_file</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Only one file will be downloaded at a time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.event</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Logged in as </span><span class="si">{</span><span class="n">bot</span><span class="o">.</span><span class="n">user</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">ctx</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">voice</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">ctx</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is not connected to a voice channel&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">channel</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">voice</span><span class="o">.</span><span class="n">channel</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">voice_client</span> <span class="o">=</span> <span class="k">await</span> <span class="n">channel</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">voice_client</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Add the song to the queue</span>
+</span></span><span class="line"><span class="cl">    <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">queue_urls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Get the song title to display the added message</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">ytdl</span><span class="o">.</span><span class="n">extract_info</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown title&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;已將 </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> 加入待撥清單&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">voice_client</span><span class="o">.</span><span class="n">is_playing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">voice_client</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">leave</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">guild</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">q</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">queue_urls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">queue_list</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">queue_urls</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span> <span class="o">=</span> <span class="n">ytdl</span><span class="o">.</span><span class="n">extract_info</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">title</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown title&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">queue_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">queue_msg</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">&#34;</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">title</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">queue_list</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Current queue:</span><span class="se">\n</span><span class="si">{</span><span class="n">queue_msg</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&#34;The queue is currently empty.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">s</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span> <span class="ow">and</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">is_playing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;Skipped the current song.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&#34;No song is currently playing.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">nowplay</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">current_player</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">elapsed</span> <span class="o">=</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">elapsed_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">elapsed</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">duration_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">current_player</span><span class="o">.</span><span class="n">duration</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">create_progress_bar</span><span class="p">(</span><span class="n">elapsed</span><span class="p">,</span> <span class="n">current_player</span><span class="o">.</span><span class="n">duration</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Now playing: </span><span class="si">{</span><span class="n">current_player</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">elapsed_str</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">progress_bar</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">duration_str</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&#34;No song is currently playing.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">create_progress_bar</span><span class="p">(</span><span class="n">elapsed</span><span class="p">,</span> <span class="n">duration</span><span class="p">,</span> <span class="n">bar_length</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">progress</span> <span class="o">=</span> <span class="n">elapsed</span> <span class="o">/</span> <span class="n">duration</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bar</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span> <span class="o">*</span> <span class="n">bar_length</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bar_length</span> <span class="o">*</span> <span class="n">progress</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">bar</span><span class="p">[:</span><span class="n">pos</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;o&#39;</span> <span class="o">+</span> <span class="n">bar</span><span class="p">[</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">progress_bar</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@bot.command</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="n">ctx</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">is_playing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">pause</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;已暫停播放.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">is_paused</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ctx</span><span class="o">.</span><span class="n">voice_client</span><span class="o">.</span><span class="n">resume</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;已繼續播放.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;沒在播歌&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;沒在語音中&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">voice_client</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">global</span> <span class="n">current_player</span><span class="p">,</span> <span class="n">start_time</span><span class="p">,</span> <span class="n">downloaded_file</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">queue</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">url</span> <span class="o">=</span> <span class="k">await</span> <span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">queue_urls</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">async</span> <span class="k">with</span> <span class="n">ctx</span><span class="o">.</span><span class="n">typing</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># Delete the previous downloaded file if it exists</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">downloaded_file</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">downloaded_file</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">downloaded_file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">player</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="k">await</span> <span class="n">YTDLSource</span><span class="o">.</span><span class="n">from_url</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="n">bot</span><span class="o">.</span><span class="n">loop</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">current_player</span> <span class="o">=</span> <span class="n">player</span>
+</span></span><span class="line"><span class="cl">                <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="n">downloaded_file</span> <span class="o">=</span> <span class="n">filename</span>  <span class="c1"># Update the downloaded file</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">voice_client</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">after</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run_coroutine_threadsafe</span><span class="p">(</span><span class="n">play_next_song</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">voice_client</span><span class="p">),</span> <span class="n">bot</span><span class="o">.</span><span class="n">loop</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;正在播放: </span><span class="si">{</span><span class="n">player</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;error:&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">await</span> <span class="n">ctx</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;no song.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">bot</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">&#39;你ㄉtoken&#39;</span><span class="p">)</span>  <span class="c1"># 替換為你的實際 Bot Token</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">運行方法 
+    <div id="%E9%81%8B%E8%A1%8C%E6%96%B9%E6%B3%95" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%81%8B%E8%A1%8C%E6%96%B9%E6%B3%95" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>其實就只要運行py檔案就好了<br>
+看你是要在cmd中執行還是直接在編譯器(我是用vs)跑都可以</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python bot.py
+</span></span></code></pre></div>
 
 <h2 class="relative group"><h2>與chatGPT交流</h2> 
     <div id="h2%E8%88%87chatgpt%E4%BA%A4%E6%B5%81h2" class="anchor"></div>
@@ -752,6 +1096,14 @@ Reset Token
     </span>        
     
 </h2>
+<p>夢ㄉ開始
+<img src="pic/start.png" class="grid-w50" /></p>
+<p>不知道為甚麼chatGPT一開始都是用java寫的，可能因為其實普遍都是用java寫吧，但我看不懂java所以都叫他寫python(<br>
+其實好像也沒有甚麼特別要講的，基本上就都是想要什麼功能就講甚麼<br>
+我覺得比較好玩的大概有nowplay功能而已
+就是跟他說&mdash;&ndash;o&mdash;-來表達進度條<br>
+<img src="pic/time.png" class="grid-w70" /></p>
+<p>大概就這樣，有甚麼問題不要DM我，去問chatGPT這都他寫的(X</p>
 
         </div>
         

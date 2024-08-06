@@ -1,3 +1,1 @@
-User-agent: *
-Allow: /
-Sitemap: https://betan423.github.io/sitemap.xml
+betan{不是_你怎麼看我的blog也要找flag啊}
