@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遊戲外掛 on 貝坦betan</title>
+    <link>https://betan423.github.io/tags/%E9%81%8A%E6%88%B2%E5%A4%96%E6%8E%9B/</link>
+    <description>Recent content in 遊戲外掛 on 貝坦betan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2024 貝坦betan</copyright>
+    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/tags/%E9%81%8A%E6%88%B2%E5%A4%96%E6%8E%9B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>超市一起瞬移DLL</title>
+      <link>https://betan423.github.io/posts/006_supermarketdll/</link>
+      <pubDate>Thu, 26 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/posts/006_supermarketdll/</guid>
+      <description>把CE改參數部分寫成dll來注入</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/006_supermarketdll/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

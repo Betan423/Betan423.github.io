@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 貝坦betan</title>
-    <link>https://betan423.github.io/posts/</link>
-    <description>Recent content in Posts on 貝坦betan</description>
+    <title>資安 on 貝坦betan</title>
+    <link>https://betan423.github.io/tags/%E8%B3%87%E5%AE%89/</link>
+    <description>Recent content in 資安 on 貝坦betan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2024 貝坦betan</copyright>
-    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/tags/%E8%B3%87%E5%AE%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>超市一起瞬移DLL</title>
       <link>https://betan423.github.io/posts/006_supermarketdll/</link>
@@ -16,16 +16,6 @@
       <guid>https://betan423.github.io/posts/006_supermarketdll/</guid>
       <description>把CE改參數部分寫成dll來注入</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/006_supermarketdll/featured.png" />
-    </item>
-    
-    <item>
-      <title>每周CTF計畫01</title>
-      <link>https://betan423.github.io/posts/005_weeklyctf01/</link>
-      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://betan423.github.io/posts/005_weeklyctf01/</guid>
-      <description>你說的對但這就是CTF</description>
-      
     </item>
     
     <item>
@@ -46,26 +36,6 @@
       <guid>https://betan423.github.io/posts/003_2024ais3/</guid>
       <description>AIS3 讚  我是好駭客</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/003_2024ais3/featured.png" />
-    </item>
-    
-    <item>
-      <title>DC音樂機器人製作</title>
-      <link>https://betan423.github.io/posts/002_discordbot/</link>
-      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://betan423.github.io/posts/002_discordbot/</guid>
-      <description>謝謝ChatGPT讓我打遊戲的時候有歌可以聽</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/002_discordbot/featured.png" />
-    </item>
-    
-    <item>
-      <title>2024 MyFirstCTF WriteUp</title>
-      <link>https://betan423.github.io/posts/001_mfctf_writeup/</link>
-      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://betan423.github.io/posts/001_mfctf_writeup/</guid>
-      <description>2024ㄉMyFirstCTF跟pre-examㄉWriteUp</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/001_mfctf_writeup/featured.png" />
     </item>
     
   </channel>
