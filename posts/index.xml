@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2024 貝坦betan</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每周CTF計畫03</title>
+      <link>https://betan423.github.io/posts/008_weeklyctf03/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/posts/008_weeklyctf03/</guid>
+      <description>這次打的是iron CTF</description>
+      
+    </item>
+    
     <item>
       <title>每周CTF計畫02</title>
       <link>https://betan423.github.io/posts/007_weeklyctf02/</link>
