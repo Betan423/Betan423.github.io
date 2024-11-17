@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh-tw" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>No Hack No CTF 2024 &middot; 貝坦betan</title>
+  <meta name="title" content="No Hack No CTF 2024 &middot; 貝坦betan" />
+  
+  <meta name="description" content="這次打的是No Hack No CTF 2024" />
+  <meta name="keywords" content="CTF, " />
+  
+  
+  <link rel="canonical" href="https://betan423.github.io/posts/010_weeklyctf05/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.5615a487fac507c43511df88c6ad42d8fd2f34979108ea0cb248cba1146fdcb8aad55e5fa3a2d69104e8e06875708d5c066abee2cf0d660691eb2f456d7d9f94.css"
+    integrity="sha512-VhWkh/rFB8Q1Ed&#43;Ixq1C2P0vNJeRCOoMskjLoRRv3Liq1V5fo6LWkQTo4Gh1cI1cBmq&#43;4s8NZgaR6y9FbX2flA==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.949e93ad68f98f91b41032983a7aee8da40cd845c548ac475ad1b4771bb9d273da1fb4d059d4d2f8f724a6a7ce5962b522b302ed72b43b8a1057a0e4e3ffc58e.js"
+    integrity="sha512-lJ6TrWj5j5G0EDKYOnrujaQM2EXFSKxHWtG0dxu50nPaH7TQWdTS&#43;PckpqfOWWK1IrMC7XK0O4oQV6Dk4//Fjg==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://betan423.github.io/posts/010_weeklyctf05/">
+  <meta property="og:site_name" content="貝坦betan">
+  <meta property="og:title" content="No Hack No CTF 2024">
+  <meta property="og:description" content="這次打的是No Hack No CTF 2024">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-16T00:00:00+00:00">
+    <meta property="article:tag" content="CTF">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="No Hack No CTF 2024">
+  <meta name="twitter:description" content="這次打的是No Hack No CTF 2024">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "No Hack No CTF 2024",
+    "headline": "No Hack No CTF 2024",
+    
+    "abstract": "這次打的是No Hack No CTF 2024",
+    "inLanguage": "zh-tw",
+    "url" : "https:\/\/betan423.github.io\/posts\/010_weeklyctf05\/",
+    "author" : {
+      "@type": "Person",
+      "name": "貝坦betan"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-11-16T00:00:00\u002b00:00",
+    "datePublished": "2024-11-16T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-11-16T00:00:00\u002b00:00",
+    
+    "keywords": ["CTF"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "486"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="貝坦betan" />
+  
+  
+  
+  <link href="https://discordapp.com/users/414682490125418496" rel="me" />
+  
+  
+  <link href="https://github.com/Betan423" rel="me" />
+  
+  
+  <link href="https://instagram.com/gul_dx600" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>快轉到主要內容</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">貝坦betan</span>
+
+            <img src="/img/logo.png" width="90" height="90"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="貝坦betan" />
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">貝坦betan</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/authors/betan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        個人簡介
+    </p>
+</a>
+
+
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        文章列表
+    </p>
+</a>
+
+
+            
+            
+  <a href="/future/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        未來規劃
+    </p>
+</a>
+
+
+            
+            
+  <a href="/intro/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        關於此網站
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/authors/betan/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            個人簡介
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            文章列表
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/future/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            未來規劃
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/intro/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            關於此網站
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div class="w-full rounded-md h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/img/Background_huf584403c160ed37e19e2052a9d2fea60_522599_1200x0_resize_box_3.png);"></div>
+
+
+
+<div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/Background_huf584403c160ed37e19e2052a9d2fea60_522599_1200x0_resize_box_3.png);">
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-30 dark:opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      No Hack No CTF 2024
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-16 00:00:00 &#43;0000 UTC">16 November 2024</time><span class="px-2 text-primary-500">&middot;</span>
+
+
+<script type="text/javascript" src="/js/zen-mode.min.ccc8b2a0c4505216444ca25530c7328aa0bef94f43dabaf3e598e1b4271de9eec76c1cb35917471a4f7ccb8d84051b3acef42baa30724ac3a667fcf1fec4432a.js" integrity="sha512-zMiyoMRQUhZETKJVMMcyiqC&#43;&#43;U9D2rrz5ZjhtCcd6e7HbByzWRdHGk98y42EBRs6zvQrqjBySsOmZ/zx/sRDKg=="></script>
+
+<span class="mb-[2px]">
+    <span id="zen-mode-button"
+          class="text-lg hover:text-primary-500"
+          title=""
+          data-title-i18n-disable=""
+          data-title-i18n-enable="">
+        <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+    <path fill="currentColor" d="M 12.980469 4 C 9.1204688 4 5.9804688 7.14 5.9804688 11 L 6 26 L 9.9804688 26 L 9.9804688 11 C 9.9804688 9.35 11.320469 8 12.980469 8 L 40.019531 8 C 41.679531 8 43.019531 9.35 43.019531 11 L 43.019531 39 C 43.019531 40.65 41.679531 42 40.019531 42 L 29 42 C 29 43.54 28.420938 44.94 27.460938 46 L 40.019531 46 C 43.879531 46 47.019531 42.86 47.019531 39 L 47.019531 11 C 47.019531 7.14 43.879531 4 40.019531 4 L 12.980469 4 z M 7 28 C 4.794 28 3 29.794 3 32 L 3 42 C 3 44.206 4.794 46 7 46 L 23 46 C 25.206 46 27 44.206 27 42 L 27 32 C 27 29.794 25.206 28 23 28 L 7 28 z M 7 32 L 23 32 L 23.001953 42 L 7 42 L 7 32 z"/>
+</svg>
+  </span>
+
+</span>
+    </span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ctf/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CTF
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+        
+        
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+        
+      
+      <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
+      alt="貝坦betan" src="/img/betan_logo_hub55e49c40b4490ecd617c90b9f40cd00_452457_192x192_fill_box_center_1.gif" />
+    
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      作者
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      貝坦betan
+    </div>
+    
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">其實作者也只會是我啦哈哈</div>
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://discordapp.com/users/414682490125418496"
+          target="_blank"
+          aria-label="Discord"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/Betan423"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://instagram.com/gul_dx600"
+          target="_blank"
+          aria-label="Instagram"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+      
+
+      
+
+      
+      <div class="mb-5"></div>
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#解出">解出</a>
+      <ul>
+        <li><a href="#crypto--aes">Crypto / AES?</a></li>
+        <li><a href="#crypto--secret-rot13">Crypto / Secret ROT13</a></li>
+        <li><a href="#crypto--ande-yo-caliente">Crypto / Ande Yo Caliente</a></li>
+        <li><a href="#misc--where-is-this">Misc / Where is this</a></li>
+        <li><a href="#misc--blog2">Misc / Blog2</a></li>
+        <li><a href="#web--哥布林保衞部公告">Web / 哥布林保衞部公告</a></li>
+        <li><a href="#web--easy-method">Web / EASY METHOD</a></li>
+        <li><a href="#web--i-need-to-get-the-c00kies">Web / I need to get the C00kies</a></li>
+        <li><a href="#web--login">Web / Login</a></li>
+        <li><a href="#web--1-line-php">Web / 1 line php</a></li>
+        <li><a href="#reverse--easyyyyyyyyyy">Reverse / easyyyyyyyyyy</a></li>
+        <li><a href="#reverse--guess-the-num">Reverse / Guess the num</a></li>
+        <li><a href="#pwn--grading-system">Pwn / Grading system</a></li>
+        <li><a href="#forensics--magicbutton">Forensics / MagicButton</a></li>
+        <li><a href="#forensics--kohiro">Forensics / Kohiro</a></li>
+        <li><a href="#forensics--suspicious-gif">Forensics / Suspicious GIF</a></li>
+        <li><a href="#forensics--botnet1">Forensics / BotNet1</a></li>
+      </ul>
+    </li>
+    <li><a href="#未解出">未解出</a>
+      <ul>
+        <li><a href="#forensics--magicbutton-1">Forensics / MagicButton</a></li>
+        <li><a href="#forensics--botnet2">Forensics / BotNet2</a></li>
+        <li><a href="#crypto--baby-rsa">Crypto / Baby RSA</a></li>
+        <li><a href="#web--miday">Web / Miday</a></li>
+        <li><a href="#web--democracy">Web / Democracy</a></li>
+        <li><a href="#reverse--heres-the-sauce">Reverse / Here&rsquo;s the sauce</a></li>
+        <li><a href="#reverse--kid-game">Reverse / Kid game</a></li>
+        <li><a href="#reverse--yet-another-password-checker">Reverse / Yet Another password checker</a></li>
+        <li><a href="#pwn--dof">PWN / DOF</a></li>
+        <li><a href="#pwn--filtered">PWN / Filtered</a></li>
+      </ul>
+    </li>
+    <li><a href="#總結">總結</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目錄
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#解出">解出</a>
+      <ul>
+        <li><a href="#crypto--aes">Crypto / AES?</a></li>
+        <li><a href="#crypto--secret-rot13">Crypto / Secret ROT13</a></li>
+        <li><a href="#crypto--ande-yo-caliente">Crypto / Ande Yo Caliente</a></li>
+        <li><a href="#misc--where-is-this">Misc / Where is this</a></li>
+        <li><a href="#misc--blog2">Misc / Blog2</a></li>
+        <li><a href="#web--哥布林保衞部公告">Web / 哥布林保衞部公告</a></li>
+        <li><a href="#web--easy-method">Web / EASY METHOD</a></li>
+        <li><a href="#web--i-need-to-get-the-c00kies">Web / I need to get the C00kies</a></li>
+        <li><a href="#web--login">Web / Login</a></li>
+        <li><a href="#web--1-line-php">Web / 1 line php</a></li>
+        <li><a href="#reverse--easyyyyyyyyyy">Reverse / easyyyyyyyyyy</a></li>
+        <li><a href="#reverse--guess-the-num">Reverse / Guess the num</a></li>
+        <li><a href="#pwn--grading-system">Pwn / Grading system</a></li>
+        <li><a href="#forensics--magicbutton">Forensics / MagicButton</a></li>
+        <li><a href="#forensics--kohiro">Forensics / Kohiro</a></li>
+        <li><a href="#forensics--suspicious-gif">Forensics / Suspicious GIF</a></li>
+        <li><a href="#forensics--botnet1">Forensics / BotNet1</a></li>
+      </ul>
+    </li>
+    <li><a href="#未解出">未解出</a>
+      <ul>
+        <li><a href="#forensics--magicbutton-1">Forensics / MagicButton</a></li>
+        <li><a href="#forensics--botnet2">Forensics / BotNet2</a></li>
+        <li><a href="#crypto--baby-rsa">Crypto / Baby RSA</a></li>
+        <li><a href="#web--miday">Web / Miday</a></li>
+        <li><a href="#web--democracy">Web / Democracy</a></li>
+        <li><a href="#reverse--heres-the-sauce">Reverse / Here&rsquo;s the sauce</a></li>
+        <li><a href="#reverse--kid-game">Reverse / Kid game</a></li>
+        <li><a href="#reverse--yet-another-password-checker">Reverse / Yet Another password checker</a></li>
+        <li><a href="#pwn--dof">PWN / DOF</a></li>
+        <li><a href="#pwn--filtered">PWN / Filtered</a></li>
+      </ul>
+    </li>
+    <li><a href="#總結">總結</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+  
+</div>
+
+
+
+<h2 class="relative group">前言 
+    <div id="%E5%89%8D%E8%A8%80" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%89%8D%E8%A8%80" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>本次排名 50/287 解出好多題題
+<img src="rank.png"  /></p>
+
+
+<h2 class="relative group">解出 
+    <div id="%E8%A7%A3%E5%87%BA" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%A7%A3%E5%87%BA" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Crypto / AES? 
+    <div id="crypto--aes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto--aes" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>解密網址: <a href="https://www.devglan.com/online-tools/aes-encryption-decryption"   target="_blank">
+    https://www.devglan.com/online-tools/aes-encryption-decryption</a><br>
+flag: 忘記記ㄌ</p>
+
+
+<h3 class="relative group">Crypto / Secret ROT13 
+    <div id="crypto--secret-rot13" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto--secret-rot13" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>把<code>+ offset</code>改成<code>- offset</code>就可以了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encrypted_text</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">offset</span> <span class="o">=</span> <span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">key</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">%</span> <span class="mi">26</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;A&#39;</span> <span class="o">&lt;=</span> <span class="n">char</span> <span class="o">&lt;=</span> <span class="s1">&#39;Z&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">offset</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s1">&#39;a&#39;</span> <span class="o">&lt;=</span> <span class="n">char</span> <span class="o">&lt;=</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">offset</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_char</span> <span class="o">=</span> <span class="n">char</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">encrypted_text</span> <span class="o">+=</span> <span class="n">new_char</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">encrypted_text</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 測試範例</span>
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="n">plaintext</span> <span class="o">=</span> <span class="s2">&#34;NHNC{Y0[_kT0w_H0]_tU_decXypZe}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="n">encrypt</span><span class="p">(</span><span class="n">plaintext</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;加密後的密文:&#34;</span><span class="p">,</span> <span class="n">ciphertext</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ans</span> <span class="o">=</span> <span class="s2">&#34;VZRU</span><span class="si">{Y0k_yd0w_Z0o_ti_rsslyxli}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encrypted_text</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">offset</span> <span class="o">=</span> <span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">key</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">%</span> <span class="mi">26</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;A&#39;</span> <span class="o">&lt;=</span> <span class="n">char</span> <span class="o">&lt;=</span> <span class="s1">&#39;Z&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>  <span class="o">-</span> <span class="n">offset</span><span class="p">)</span> <span class="o">%</span><span class="mi">26</span> <span class="o">+</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s1">&#39;a&#39;</span> <span class="o">&lt;=</span> <span class="n">char</span> <span class="o">&lt;=</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">offset</span><span class="p">)</span> <span class="o">%</span><span class="mi">26</span> <span class="o">+</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">new_char</span> <span class="o">=</span> <span class="n">char</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">encrypted_text</span> <span class="o">+=</span> <span class="n">new_char</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">encrypted_text</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="n">decrypt</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;解密後的密文:&#34;</span><span class="p">,</span> <span class="n">ciphertext</span><span class="p">)</span>    
+</span></span></code></pre></div><p>flag: NHNC{Y0u_kn0w_H0w_to_decrypte}</p>
+
+
+<h3 class="relative group">Crypto / Ande Yo Caliente 
+    <div id="crypto--ande-yo-caliente" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto--ande-yo-caliente" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>透過ChaCha20加密，其實我根本不會解<br>
+但餵給GPT後他就直接幫我生出exp.py<br>
+請勿模仿 最壞示範
+<a href="https://chatgpt.com/share/6739d9fe-0bb4-8012-ac28-dc023d225c19"   target="_blank">
+    點我看對話紀錄</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">binascii</span> <span class="kn">import</span> <span class="n">unhexlify</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Provided data</span>
+</span></span><span class="line"><span class="cl"><span class="n">iv</span> <span class="o">=</span> <span class="n">unhexlify</span><span class="p">(</span><span class="s2">&#34;635b52504ab86d67d780dede&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">encrypted_message</span> <span class="o">=</span> <span class="n">unhexlify</span><span class="p">(</span><span class="s2">&#34;eab3ee7a3821847b76558eb61ec26f4fc7f72f436966ab7680d652b872c85c0bae4879db0748b02dde7df7ca34288a0fa21bd8889c57d3ff986a9566f09733cfbc6e&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">encrypted_flag</span> <span class="o">=</span> <span class="n">unhexlify</span><span class="p">(</span><span class="s2">&#34;f393c557632f836f226c828c1e87634489fa2e7d7b38e477b0d14dfa66&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Known plaintext</span>
+</span></span><span class="line"><span class="cl"><span class="n">message</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&#34;When you feel my heat, look into my eyes</span><span class="se">\n</span><span class="s2">It&#39;s where my demons hide&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Recover the keystream</span>
+</span></span><span class="line"><span class="cl"><span class="n">keystream</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">m</span> <span class="o">^</span> <span class="n">e</span> <span class="k">for</span> <span class="n">m</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">encrypted_message</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Decrypt the flag</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">f</span> <span class="o">^</span> <span class="n">k</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">encrypted_flag</span><span class="p">,</span> <span class="n">keystream</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Recovered FLAG: </span><span class="si">{</span><span class="n">flag</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>flag: NHNC{what_i_learned_from_htb}</p>
+
+
+<h3 class="relative group">Misc / Where is this 
+    <div id="misc--where-is-this" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#misc--where-is-this" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>google找排骨酥麵跟河堤上的貓<br>
+flag: NHNC{24.803_120.979}</p>
+
+
+<h3 class="relative group">Misc / Blog2 
+    <div id="misc--blog2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#misc--blog2" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>點到推薦vt那邊的留言，可以看到管理員的留言，點進去後可以看到個人檔案<br>
+裡面有個不要點進來 所以我們點進去就有flag了
+flag: NHNC{comments_disqusjs}</p>
+
+
+<h3 class="relative group">Web / 哥布林保衞部公告 
+    <div id="web--%E5%93%A5%E5%B8%83%E6%9E%97%E4%BF%9D%E8%A1%9E%E9%83%A8%E5%85%AC%E5%91%8A" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--%E5%93%A5%E5%B8%83%E6%9E%97%E4%BF%9D%E8%A1%9E%E9%83%A8%E5%85%AC%E5%91%8A" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>F12打開就能看到被註釋掉的flag了<br>
+也能右鍵點開 檢視網頁原始碼 查看<br>
+flag: NHNC{BeCareful!}</p>
+
+
+<h3 class="relative group">Web / EASY METHOD 
+    <div id="web--easy-method" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--easy-method" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>透過標題還有點進去都有特別提及HTTP Method，就是GET、POST那些的<br>
+使用burp suite攔截封包然後送到repeater，開始改HTTP Method<br>
+找了一下發現有OPTIONS、GET、HEAD、POST、PUT、DELETE、TRACE、CONNECT這幾種<br>
+最後改成PUT就有flag了<br>
+也能用curl來改啦 但我不會 ㄏ<br>
+flag: NHNC{Y0u_kn0w_H0w_t0_us3_CURL}</p>
+
+
+<h3 class="relative group">Web / I need to get the C00kies 
+    <div id="web--i-need-to-get-the-c00kies" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--i-need-to-get-the-c00kies" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>F12把自己的cookie值改成admin<br>
+flag: NHNC{You_Kn0w_H0w_t0_chang3_th3_c00ki3}</p>
+
+
+<h3 class="relative group">Web / Login 
+    <div id="web--login" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--login" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>SQLI<br>
+Username填<code>admin' OR 1=1 ;--</code><br>
+Password隨便寫就可以了 因為上面已經將後續都註釋掉了<br>
+flag: NHNC{S1mp|e_-_SQL!}</p>
+
+
+<h3 class="relative group">Web / 1 line php 
+    <div id="web--1-line-php" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--1-line-php" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>透過<code>%0A</code>能夠在bash中換行，於是後面就可以開始command injection了 <br>
+接著發動通靈能力，cd 到根目錄(/)看到 <code>flag-</code> ，接著輸出該檔案就可以ㄌ<br>
+payload: <code>cmd=%0Acd%20/%20;cat%20flag-</code><br>
+flag: NHNC{enter_is_always_the_best}</p>
+
+
+<h3 class="relative group">Reverse / easyyyyyyyyyy 
+    <div id="reverse--easyyyyyyyyyy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--easyyyyyyyyyy" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>不知道為甚麼我直接執行會失敗<br>
+但總之把他丟到ida後就會發現有個function叫flag(void)<br>
+點進去就有了<br>
+flag: NHNC{this_is_a_easy_one}</p>
+
+
+<h3 class="relative group">Reverse / Guess the num 
+    <div id="reverse--guess-the-num" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--guess-the-num" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>一開始直接透過ida去把猜數字最後比較的部分從jnz改成jz<br>
+結果發現最後輸出的flag是假的qq<br>
+實際去查看了一下每個function後，發現其中<code>sub_1217</code>很可疑，有調用到flag，看起來疑似是在作解密之類的?<br>
+接著透過gdb直接跳到該function，由於這題的base address不是常見的0x400000，因此這邊要先下vmmap來看一下base address<br>
+查看後發現是0x0000555555554000，那再來就先在目標function下一個bp然後跳到那邊ni逐步執行就可以了</p>
+<pre tabindex="0"><code>b *(0x0000555555554000+0x1217)
+jump *(0x0000555555554000+0x1217)
+</code></pre><p>flag: NHNC{traced_down_to_dtor}</p>
+
+
+<h3 class="relative group">Pwn / Grading system 
+    <div id="pwn--grading-system" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pwn--grading-system" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>觀察原代碼可以發現這題存在陣列溢出問題<br>
+其實我也不知道是不是叫這個名子 好像不是 但隨便<br>
+總之由於他沒有限制我們對於陣列查找的範圍<br>
+因此我們能透過輸入超出陣列大小的值，來leak出其他值<br>
+然後這題還很貼心的把admin初始化為1234，而且還提供了快速dump陣列值的功能<br>
+我們剛開始學生數量任意輸入，接著透過Dump功能來查找1234的值位於陣列何處<br>
+最後再透過修改該值為1，即可透過輸入<code>S</code>來getshell<br>
+flag: NHNC{i_dont_think_you_are_a_teacher}</p>
+
+
+<h3 class="relative group">Forensics / MagicButton 
+    <div id="forensics--magicbutton" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#forensics--magicbutton" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>下載下來後點按鈕就會噴flag了<br>
+flag: NHNC{This_is_real_vuln}</p>
+
+
+<h3 class="relative group">Forensics / Kohiro 
+    <div id="forensics--kohiro" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#forensics--kohiro" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>圖片很明顯是被裁切過，因此這邊要來改變圖片的高度<br>
+透過hex編輯器(我是用010editor)找到其中控制寬高的部分<br>
+可以透過先將當前圖片的長度/高度轉成hex的形式，再拿去裡面搜尋相同的值<br>
+搜尋後可以發現是在其中的00A0,3~6為高、寬的長度<br>
+這邊把高的長度加長一點就有flag了<br>
+矮額<br>
+
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/010_weeklyctf05/pics/flag_hu7192867f1131cb3ada4a09feb1c167f1_32777_330x0_resize_q75_box.jpg 330w,
+        /posts/010_weeklyctf05/pics/flag_hu7192867f1131cb3ada4a09feb1c167f1_32777_660x0_resize_q75_box.jpg 660w,
+        /posts/010_weeklyctf05/pics/flag_hu7192867f1131cb3ada4a09feb1c167f1_32777_1024x0_resize_q75_box.jpg 1024w,
+        /posts/010_weeklyctf05/pics/flag_hu7192867f1131cb3ada4a09feb1c167f1_32777_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/010_weeklyctf05/pics/flag_hu7192867f1131cb3ada4a09feb1c167f1_32777_660x0_resize_q75_box.jpg"
+        alt="alt text"
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<p>flag: NHNC{you_can_edit_hex_00A0_04}</p>
+
+
+<h3 class="relative group">Forensics / Suspicious GIF 
+    <div id="forensics--suspicious-gif" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#forensics--suspicious-gif" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>把gif逐禎分解後就有flag了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert sus.gif flag.png
+</span></span></code></pre></div><p>flag: NHNC{FrAmE_bY_fRaMe}</p>
+
+
+<h3 class="relative group">Forensics / BotNet1 
+    <div id="forensics--botnet1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#forensics--botnet1" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+<p>進去<a href="https://sepolia.etherscan.io/address/0xAD840c4c2F869896EfE0891614faA1908dcD0153"   target="_blank">
+    查詢網址</a>後，查看Internal Transactions</p>
+<p>flag: NHNC{0x3e9e0e9cee22Ccd0ac94604A72394B0A1CCdb27A}</p>
+
+
+<h2 class="relative group">未解出 
+    <div id="%E6%9C%AA%E8%A7%A3%E5%87%BA" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9C%AA%E8%A7%A3%E5%87%BA" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Forensics / MagicButton 
+    <div id="forensics--magicbutton-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#forensics--magicbutton-1" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Forensics / BotNet2 
+    <div id="forensics--botnet2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#forensics--botnet2" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Crypto / Baby RSA 
+    <div id="crypto--baby-rsa" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#crypto--baby-rsa" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Web / Miday 
+    <div id="web--miday" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--miday" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Web / Democracy 
+    <div id="web--democracy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#web--democracy" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Reverse / Here&rsquo;s the sauce 
+    <div id="reverse--heres-the-sauce" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--heres-the-sauce" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Reverse / Kid game 
+    <div id="reverse--kid-game" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--kid-game" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Reverse / Yet Another password checker 
+    <div id="reverse--yet-another-password-checker" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reverse--yet-another-password-checker" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">PWN / DOF 
+    <div id="pwn--dof" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pwn--dof" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">PWN / Filtered 
+    <div id="pwn--filtered" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pwn--filtered" aria-label="定位點">#</a>
+    </span>        
+    
+</h3>
+
+
+<h2 class="relative group">總結 
+    <div id="%E7%B8%BD%E7%B5%90" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%B8%BD%E7%B5%90" aria-label="定位點">#</a>
+    </span>        
+    
+</h2>
+<p>這次解到滿躁的 感覺很多都差一點 然後有些題目很幹(
+耶繼續努力 plus ultra</p>
+
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\010_WeeklyCTF05\\index.md"
+        var oid_likes = "likes_posts\\010_WeeklyCTF05\\index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/009_weeklyctf04/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >成大資安社迎新杯 CTF</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-10-14 00:00:00 &#43;0000 UTC">14 October 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="捲動到頁頂" title="捲動到頁頂">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      貝坦betan
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://betan423.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜尋"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="關閉 (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
