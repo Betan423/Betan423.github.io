@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://betan423.github.io/</loc>
-    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://betan423.github.io/posts/010_weeklyctf05/</loc>
-    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+    <loc>https://betan423.github.io/posts/011_cve-2024-23334/</loc>
+    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://betan423.github.io/posts/</loc>
+    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://betan423.github.io/posts/010_weeklyctf05/</loc>
     <lastmod>2024-11-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
