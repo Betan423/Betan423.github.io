@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CVE on 貝坦betan</title>
+    <link>https://betan423.github.io/tags/cve/</link>
+    <description>Recent content in CVE on 貝坦betan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 貝坦betan</copyright>
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/tags/cve/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE-2024-23334復現</title>
+      <link>https://betan423.github.io/posts/011_cve-2024-23334/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/posts/011_cve-2024-23334/</guid>
+      <description>本來是臺灣好厲駭課前作業 想說滿酷的就丟上來了</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/011_cve-2024-23334/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

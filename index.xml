@@ -6,8 +6,28 @@
     <description>Recent content in betan423.github.io on 貝坦betan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <copyright>© 2024 貝坦betan</copyright>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 貝坦betan</copyright>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://betan423.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>當連結成為駭客利器：分析LNK攻擊與防禦技巧</title>
+      <link>https://betan423.github.io/posts/013_lnkresearch/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/posts/013_lnkresearch/</guid>
+      <description>分析了 LNK file 是如何被用作攻擊，並簡單介紹了 LNK 的結構，以及相關攻擊手法、並分析惡意程式，最後說明該如何預防</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/013_lnkresearch/feature.png" />
+    </item>
+    
+    <item>
+      <title>phpinfo，打開 LFI 的潘朵拉盒 (Error)</title>
+      <link>https://betan423.github.io/posts/012_lfiphpinfo/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://betan423.github.io/posts/012_lfiphpinfo/</guid>
+      <description>透過phpinfo能夠查看暫存檔資訊，並以此來得到剛剛輸入的惡意payload</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://betan423.github.io/posts/012_lfiphpinfo/feature.jpg" />
+    </item>
+    
     <item>
       <title>CVE-2024-23334復現</title>
       <link>https://betan423.github.io/posts/011_cve-2024-23334/</link>
