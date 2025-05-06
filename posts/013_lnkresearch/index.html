@@ -11,7 +11,7 @@
   <title>當連結成為駭客利器：分析LNK攻擊與防禦技巧 &middot; 貝坦betan</title>
   <meta name="title" content="當連結成為駭客利器：分析LNK攻擊與防禦技巧 &middot; 貝坦betan" />
   
-  <meta name="description" content="分析了 LNK file 是如何被用作攻擊，並簡單介紹了 LNK 的結構，以及相關攻擊手法、並分析惡意程式，最後說明該如何預防" />
+  <meta name="description" content="本文將分析 LNK 檔案如何被用於攻擊，從結構入手，並深入研究了 EmbedExeLnk 及常見攻擊手段，以及說明該如何預防" />
   <meta name="keywords" content="research, malware, " />
   
   
@@ -66,7 +66,7 @@
   <meta property="og:url" content="https://betan423.github.io/posts/013_lnkresearch/">
   <meta property="og:site_name" content="貝坦betan">
   <meta property="og:title" content="當連結成為駭客利器：分析LNK攻擊與防禦技巧">
-  <meta property="og:description" content="分析了 LNK file 是如何被用作攻擊，並簡單介紹了 LNK 的結構，以及相關攻擊手法、並分析惡意程式，最後說明該如何預防">
+  <meta property="og:description" content="本文將分析 LNK 檔案如何被用於攻擊，從結構入手，並深入研究了 EmbedExeLnk 及常見攻擊手段，以及說明該如何預防">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -80,7 +80,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://betan423.github.io/posts/013_lnkresearch/feature.png">
   <meta name="twitter:title" content="當連結成為駭客利器：分析LNK攻擊與防禦技巧">
-  <meta name="twitter:description" content="分析了 LNK file 是如何被用作攻擊，並簡單介紹了 LNK 的結構，以及相關攻擊手法、並分析惡意程式，最後說明該如何預防">
+  <meta name="twitter:description" content="本文將分析 LNK 檔案如何被用於攻擊，從結構入手，並深入研究了 EmbedExeLnk 及常見攻擊手段，以及說明該如何預防">
 
   
   <script type="application/ld+json">
@@ -90,8 +90,8 @@
     "articleSection": "Posts",
     "name": "當連結成為駭客利器：分析LNK攻擊與防禦技巧",
     "headline": "當連結成為駭客利器：分析LNK攻擊與防禦技巧",
-    "description": "分析了 LNK file 是如何被用作攻擊，並簡單介紹了 LNK 的結構，以及相關攻擊手法、並分析惡意程式，最後說明該如何預防",
-    "abstract": "分析了 LNK file 是如何被用作攻擊，並簡單介紹了 LNK 的結構，以及相關攻擊手法、並分析惡意程式，最後說明該如何預防",
+    "description": "本文將分析 LNK 檔案如何被用於攻擊，從結構入手，並深入研究了 EmbedExeLnk 及常見攻擊手段，以及說明該如何預防",
+    "abstract": "本文將分析 LNK 檔案如何被用於攻擊，從結構入手，並深入研究了 EmbedExeLnk 及常見攻擊手段，以及說明該如何預防",
     "inLanguage": "zh-tw",
     "url" : "https:\/\/betan423.github.io\/posts\/013_lnkresearch\/",
     "author" : {
@@ -107,7 +107,7 @@
     "keywords": ["research","malware"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1435"
+    "wordCount": "1441"
   }]
   </script>
 
@@ -761,7 +761,7 @@
 
         <div class="article-content max-w-prose mb-20">
           <div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
-  分析了 LNK file 是如何被用作攻擊，並從 LNK 結構開始介紹，並介紹攻擊手法 embedexelnk 是如何實現的，以及分析現有惡意程式並說明該如何預防
+  分析了 LNK file 是如何被用作攻擊，並從 LNK 結構開始介紹，並介紹攻擊手法 EmbedExeLnk 是如何實現的，以及分析現有惡意程式並說明該如何預防
 </div>
 
 
@@ -882,7 +882,10 @@ LNK 檔案簡單來講就是我們常在桌面使用的連結，<br>
     </span>        
     
 </h3>
-<p>通常使用 LOLBins(Living Off the Land Binaries) 來執行攻擊，<br>
+<p>通常會將惡意連接的名稱以及圖示改建成跟受害者相關的內容，<br>
+例如 <code>財報.xlsx</code>, <code>五月行事曆.pdf</code> 等內容會誘使他人點擊的內容，<br>
+若是受害者就直接點開了，則就會開始執行惡意行為了。</p>
+<p>大多使用 LOLBins(Living Off the Land Binaries) 來執行攻擊，<br>
 例如 <code>cmd</code>, <code>powershell</code>, <code>winrm</code>, <code>mshta</code> 等內建工具，<br>
 並且由於是透過呼叫本機就有的程式，<br>
 因此也較不容易被偵測到惡意行為。</p>
